@@ -148,6 +148,7 @@ public class NetworkRequestHandlerTest {
     assertThat(result.getStream()).isNull();
   }
 
+<<<<<<< HEAD
   @Test public void downloaderInputStreamNotDecoded() throws Exception {
     final InputStream is = new ByteArrayInputStream(new byte[] { 'a' });
     Downloader bitmapDownloader = new Downloader() {
@@ -165,4 +166,6 @@ public class NetworkRequestHandlerTest {
     assertThat(result.getStream()).isSameAs(is);
     assertThat(result.getBitmap()).isNull();
   }
+=======
+>>>>>>> 6a36cf75961197bc78105f8bddc7a8d416817c06
 }
